@@ -11,12 +11,6 @@ return {
       vim.g.gruvbox_material_float_style = "bright"
       vim.g.gruvbox_material_statusline_style = "mix" -- Options: "original", "material", "mix", "afterglow"
       vim.g.gruvbox_material_cursor = "auto"
-
-      -- vim.g.gruvbox_material_colors_override = { bg0 = '#16181A' } -- #0e1010
-      -- vim.g.gruvbox_material_better_performance = 1
-
-      -- vim.cmd.colorscheme("gruvbox-material")
-
       -- Custom statusline highlights
       vim.api.nvim_set_hl(0, "StatusLine", {
         bg = "#1C2021", -- Dark gray background
@@ -458,86 +452,7 @@ return {
           end,
         },
       })
-      -- vim.api.nvim_set_hl(0, "NavicIconsOperator", { default = true, bg = "none", fg = "#eedaad" })
-      -- vim.api.nvim_set_hl(0, "NavicText", { default = true, bg = "none", fg = "#eedaad" })
-      -- vim.api.nvim_set_hl(0, "NavicSeparator", { default = true, bg = "none", fg = "#eedaad" })
-
       vim.api.nvim_command("colorscheme catppuccin")
     end,
   },
-  -- {
-  --   'projekt0n/github-nvim-theme',
-  --   name = 'github-theme',
-  --   lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-  --   priority = 1020, -- make sure to load this before all the other start plugins
-  --   config = function()
-  --     -- Default options
-  --     require('github-theme').setup({
-  --       options = {
-  --         -- Compiled file's destination location
-  --         compile_path = vim.fn.stdpath('cache') .. '/github-theme',
-  --         compile_file_suffix = '_compiled', -- Compiled file suffix
-  --         hide_end_of_buffer = true,         -- Hide the '~' character at the end of the buffer for a cleaner look
-  --         hide_nc_statusline = true,         -- Override the underline style for non-active statuslines
-  --         transparent = false,               -- Disable setting bg (make neovim's background transparent)
-  --         terminal_colors = true,            -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
-  --         dim_inactive = false,              -- Non focused panes set to alternative background
-  --         module_default = true,             -- Default enable value for modules
-  --         styles = {                         -- Style to be applied to different syntax groups
-  --           comments = 'NONE',               -- Value is any valid attr-list value `:help attr-list`
-  --           functions = 'NONE',
-  --           keywords = 'NONE',
-  --           variables = 'NONE',
-  --           conditionals = 'NONE',
-  --           constants = 'NONE',
-  --           numbers = 'NONE',
-  --           operators = 'NONE',
-  --           strings = 'NONE',
-  --           types = 'NONE',
-  --         },
-  --         inverse = { -- Inverse highlight for different types
-  --           match_paren = false,
-  --           visual = false,
-  --           search = false,
-  --         },
-  --         darken = { -- Darken floating windows and sidebar-like windows
-  --           floats = true,
-  --           sidebars = {
-  --             enable = true,
-  --             list = {}, -- Apply dark background to specific windows
-  --           },
-  --         },
-  --         modules = { -- List of various plugins and additional options
-  --           -- ...
-  --         },
-  --       },
-  --       palettes = {},
-  --       specs = {},
-  --       groups = {},
-  --     })
-  --
-  --     -- setup must be called before loading
-  --     -- vim.cmd('colorscheme github_light')
-  --   end,
-  -- },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = true,
-  --     styles = {
-  --       comments = { italic = false },
-  --       keywords = { italic = false },
-  --       functions = {},
-  --       variables = {},
-  --       sidebars = "dark",
-  --       floats = "dark",
-  --     },
-  --   },
-  --   config = function(_, opts)
-  --     require("tokyonight").setup(opts)
-  --     -- vim.cmd.colorscheme("tokyonight-moon")
-  --   end,
-  -- },
 }
