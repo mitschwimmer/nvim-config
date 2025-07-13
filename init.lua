@@ -7,4 +7,4 @@ require("config.keymaps")
 require("config.autocmds")
 require("config.mason-verify")
 
-require("core.lazy")
+require("config.lazy")
