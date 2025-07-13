@@ -1,4 +1,3 @@
-require("core.mason-path")
 
 require("config.lsp")
 require("config.options")
