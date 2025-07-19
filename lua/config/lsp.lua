@@ -2,6 +2,7 @@ vim.lsp.enable({
     "lua-ls",
     "html-ls",
     "css-ls",
+    "shrink",
 })
 
 vim.diagnostic.config({
