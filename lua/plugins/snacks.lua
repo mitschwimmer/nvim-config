@@ -5,9 +5,10 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
+    image = { enabled = false },
     dashboard = { enabled = true },
     explorer = { enabled = true },
-    indent = { enabled = false },
+    indent = { enabled = true },
     input = { enabled = true },
     notifier = {
       enabled = true,
@@ -21,7 +22,7 @@ return {
     },
     quickfile = { enabled = true },
     scope = { enabled = true },
-    scroll = { enabled = false },
+    scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
     styles = {
@@ -474,7 +475,7 @@ return {
     {
       "<c-/>",
       function()
-        Snacks.terminal()
+        Snacks.terminal().toggle()
       end,
       desc = "Toggle Terminal",
     },
