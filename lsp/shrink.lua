@@ -2,7 +2,7 @@ local blink = require("blink.cmp")
 
 return {
   cmd = {
-    "java", "-jar", "/home/henner/Projects/public/work.archaic/shrink/shrink.jar"
+    "java", "-jar", vim.fn.expand("~/.local/share/langservers/shrink.jar")
   },
   root_markers = { 'src/', '.git', },
   filetypes = { 'java' },
